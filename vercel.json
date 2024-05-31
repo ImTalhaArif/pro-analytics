@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pages/api/logs.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/logs",
+      "dest": "pages/api/logs.py"
+    }
+  ]
+}
